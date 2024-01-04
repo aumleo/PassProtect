@@ -9,7 +9,7 @@ while more=="yes":
 
 
 
-bids=[]
+bids= []
 if more=='no':
     bids.append(auction[name])
 winner=''
