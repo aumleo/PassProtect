@@ -86,7 +86,7 @@ def compare(score, guess, a_followers, b_followers):
         print(f'Right! {score}')
     else:
         print(f'Wrong! Final Total ={score}')
-    
+                                                                #TO CLEAR SCREEN AFTER EVERY ITERATION    
     input("Press Enter to continue...")
     os.system('clear' if os.name == 'posix' else 'cls')
 
