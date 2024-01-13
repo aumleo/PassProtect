@@ -75,7 +75,7 @@ while display.count('_')>0:
             display[position]=guess
     if guess not in chosen_word:
         lives-=1
-        if lives==0:
+        if lives== 0:
             print(stages[lives])
             print('YOU LOSE')
             break
