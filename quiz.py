@@ -15,7 +15,7 @@ question_data = [
 
 #TO GET TEXT AND ANS
 class Question:
-    def __init__ (self, text, answer):
+    def __init__ (self, text, answer): 
         self.text=text
         self.answer=answer
 
