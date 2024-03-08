@@ -19,13 +19,10 @@ all_states = data['state'].to_list()
 guessed = []
 
 while len(guessed)<50:
-    ans_state = screen.textinput(title = f'{len(guessed)}/50 correct', prompt = "What's a name of a State").title()
+    ans_state = screen.textinput(title = f'{len(guessed)}/50 correct', prompt = "What's a name of a State ((Write 'Exit' to leave))").title()
 
     if ans_state == 'Exit':
-        missing = []
-        for state in all_states:
-            if state not in guessed:
-                missing.append(state)
+        missing = [state for state in all_states if state not in guessed]
         print(missing)
         break
     if ans_state in all_states:
