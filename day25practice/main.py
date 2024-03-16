@@ -54,6 +54,8 @@ print(data)
 # 0    Alice   25     New York
 # 1      Bob   30  Los Angeles
 # 2  Charlie   35      Chicago
+
+#Save the above file as Csv / Create a new Csv File -
 data.to_csv('new_data.csv')
 
 
